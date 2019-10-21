@@ -1,0 +1,14 @@
+---
+resources:
+- name: foobar
+  type: git
+  source:
+    uri: https://github.com/mbigras/foobar
+
+jobs:
+- name: unit
+  plan:
+  - get: foobar
+    trigger: true
+  - task: test
+    file: foobar/ci/test.yml

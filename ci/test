@@ -5,3 +5,4 @@ whoami
 pwd
 ls
 echo 'hello world!'
+echo 'this is a build artifact!' > somepath/build.artifact
